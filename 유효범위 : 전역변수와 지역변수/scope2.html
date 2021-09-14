@@ -1,0 +1,21 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	// 지역변수 vs 전역변수 함수 내에 var = 1; 은 지역변수, 함수 밖에 var = 1; 은 전역변수
+	function a(){
+		var i = 0;
+	}
+	// for문 안에 var는 함수내에 var가 아니므로 전역변수, 함수 a();의 i는 지역변수
+	for(var i = 0; i < 10; i++){
+		a();
+		document.write(i);
+	}	
+	// 전역변수, 지역변수 디렉토리 개념
+
+	
+</script>
+</body>
+</html>

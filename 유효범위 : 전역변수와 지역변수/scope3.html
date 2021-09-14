@@ -1,0 +1,47 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	// 전역벽수의 불가피한 사용 더글라스 크록포드
+	var MYAPP = {}
+	MYAPP.calculator = {
+		'left' : null,
+		'right' : null
+	}
+	MYAPP.coordinate = {
+		'left' : null,
+		'right' : null
+	}
+	MYAPP.calculator.left = 10;
+	MYAPP.calculator.right = 20;
+	function sum(){
+		return MYAPP.calculator.left + MYAPP.calculator.right;
+	}
+	document.write(sum());
+
+	/*
+	아래는 바로 호출하는 익명함수(이름이 없는 함수, 전역변수가 없게 할 수 있)
+	(function(){
+	var MYAPP = {}
+	MYAPP.calculator = {
+		'left' : null,
+		'right' : null
+	}
+	MYAPP.coordinate = {
+		'left' : null,
+		'right' : null
+	}
+	MYAPP.calculator.left = 10;
+	MYAPP.calculator.right = 20;
+	function sum(){
+		return MYAPP.calculator.left + MYAPP.calculator.right;
+	}
+	document.write(sum());
+	}())
+	*/
+
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	// fscope라는 함수는 함수 바깥쪽에 선언되어 있는 vscope라는 변수에 접근할 수 있다.
+	/* 아래의 경우 전역변수
+	var vscope = 'global';
+	function fscope(){
+		alert(vscope);
+	}
+	fscope();
+	*/
+	// 아래의 경우 전역변수, 지역변수
+	/*
+	var vscope = 'global';
+	function fscope(){
+		var lv = 'local variable';
+		alert(lv);
+	}
+	function fscope2(){
+		alert(lv);
+	}
+	fscope();	
+	fscope2();
+	*/
+	// var 변수 함수 바깥쪽에서 사용하면 전역변수가 되고, 암수 안쪽에서 사용하면 지역변수가 된다.
+	var vscope = 'global';		// 전역변수
+	function fscope(){
+		var vscope = 'local';	// 지역변수
+		vscope = 'local';		// 지역변수를 수정
+	}
+	fscope();					
+	alert(vscope);
+
+</script>	
+</body>
+</html>	
