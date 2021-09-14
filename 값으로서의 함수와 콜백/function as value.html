@@ -1,0 +1,52 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	/* 
+	JavaScript에서는 함수도 객체다. 다시 말해서 일종의 값이다. 거의 모든 언어가 함수를 가지고 있다. JavaScript의 함수가 다른 언어의 함수와 다른 점은 함수가 값이 될 수 있다는 점이다. 다음 예제를 통해서 그 의미를 알아보자.
+	*/
+	// function a(){}
+	// 위 예제에서 함수 a는 변수 a에 담겨진 값이다. 또한 함수는 객체의 값으로 표함될 수 있다.
+	// 이렇게 객체의 속성 값으로 담겨진 함수를 메소드(method)라고 부른다.
+	/*
+	a = {
+		b : function(){
+
+		}
+	};
+	// 위 예제에서는 객체의 속성 값으로 담겨진 함수가 있는데, 이러한 함수를 메소드(method)라고 함
+	*/
+
+	function cal(func, num){
+		return func(num)
+	}
+
+	function increase(num){
+		return num+1
+	}
+
+	function decrease(num){
+		return num-1
+	}
+	alert(cal(increase, 1));
+	alert(cal(decrease, 1));
+
+	/*
+	fucntion cal(func, )
+
+
+
+
+	*/
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
