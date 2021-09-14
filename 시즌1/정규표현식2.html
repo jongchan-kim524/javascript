@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	// i를 붙이면 대소문자를 구문하지 않는다.
+	var xi = /a/;
+	// var xi = new RegExp('a');
+	var oi = /a/i;
+	console.log("Abcde".match(xi));
+	console.log("Abcde".match(oi));
+
+	// g를 붙이면 검색된 모든 결과를 리턴한다.
+	var xg = /a/;
+	var og = /a/g;
+	var ig = /a/ig;
+	var ig2 = /a/gi;
+	console.log("Aabcdea".match(xg));
+	console.log("Aabcdea".match(og));	
+	console.log("Aabcdea".match(ig));	
+	console.log("Aabcdea".match(ig2));	
+</script>
+</body>
+</html>

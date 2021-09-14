@@ -1,0 +1,16 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	// 캡처 (\w+) -> A~Z, a~z, 0~9까지의 숫자가 2개 이상 있다는 의미
+	// \s -> 스페이스라는 의미
+	var pattern = /(\w+)\s(\w+)/;
+	var str = "coding everybody";
+	var result = str.replace(pattern, '$2, $1');	// str에 담겨있는 값을 패턴에 담겨있는 문자를 뒤에있는 값으로 치환한다는 뜻, $2는 두번째 있는 값, $1은 첫번째 있는 값
+	console.log(result);
+
+</script>>
+</body>
+</html>	

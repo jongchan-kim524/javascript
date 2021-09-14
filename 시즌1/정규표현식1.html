@@ -1,0 +1,45 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	/* 정규표현식(regular expression)은 문자열에서 특정한 문자를 찾아내는 도구다. 이 도구를 이용하면 수십줄이 필요한 작업을 한줄로 끝낼 수 있다.
+	
+	컴파일 단계 - 패턴을 찾는 것
+
+	실행 단계 - 패턴을 찾아서 실행하는 단계 
+	*/
+	var str = "abcde";
+	var pattern = /a./;									// 정규표현식 리터럴 방식
+	var pattern2 = new RegExp('a.');					// 정규표현식 객체 생성자
+	var pattern3 = new RegExp('f.');	
+	/* 정규표현식을 컴파일해서 객체를 만들었다면 이제 문자열에서 원하는 문자를 찾아내야 한다.
+	정규표현식을 통해서 확인하는 작업은 크게 "추출, 테스트, 치환" 입니다.
+	*/
+	// 추출하기 위한 .exec
+	document.write(pattern.exec('abcde')+"<br />");		// /a./ -> .은 1문자라는 의미
+	document.write(pattern2.exec('abcde')+"<br />");
+	document.write(pattern3.exec('aacde')+"<br />");	// 없는 경우엔 null을 출력	
+
+	// Test하기 위한 .test(true or false)
+	document.write(pattern.test('abcde')+"<br />");		// true		-> boolean 
+	document.write(pattern2.test('abcde')+"<br />");	// true		-> boolean
+	document.write(pattern3.test('aacde')+"<br />");	// false	-> boolean
+		
+	// RegExp.exec()와 비슷한 String.match()
+	document.write(str.match(pattern)+"<br />");		// ab	
+	document.write(str.match(pattern2)+"<br />");		// ab
+	document.write(str.match(pattern3)+"<br />");		// null
+
+	// String.replace() 는 치환					
+	document.write(str.replace(pattern, 'A'));			// Acde
+
+
+
+
+
+
+</script>
+</body>
+</html>

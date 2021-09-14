@@ -1,0 +1,53 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<ul>
+	<li>egoing</li>
+	<li>graphitte</li>
+	<li>lezche</li>
+</ul>
+
+<ul>
+<script type="text/javascript">
+	// 배열은 자동으로 index값을 가지게 되므로 아래와 같이 반복문을 이용할 수 있음
+	// 배열은 순서를 가지고 있으므로 중요함
+	/*
+	var arr = ['a', 'b', 'c'];
+	for (var i = 0; i < arr.length; i++) {
+		document.write(arr[i]);
+	};
+	*/
+	// 객체는 key와 value를 가짐
+	/*
+	var grades = {'egoing': 10, 'k8805': 6, 'sorialgi': 80};
+	for (key in grades) {
+		document.write("key : "+key+ "value : "+grades[key]+"<br />");
+	};
+	*/
+	// 아래와 같이 key 대신 name을 써도 무방
+	/*
+	var grades = {'egoing': 10, 'k8805': 6, 'sorialgi': 80};
+	for (name in grades) {
+		document.write("<li>name : "+name+ "value : "+grades[name]+"</li>");
+	};
+	*/
+
+	// for in 문은 배열에서도 사용 가능
+	/*
+	var arr = ['a', 'b', 'c'];
+	for(key in arr){
+		document.write("<li>key : "+key+ "value : "+arr[key]+"</li>");
+	}
+	*/
+	
+	var arr2 = {'a' : 30, 'b' : 40, 'c' : 50};
+		for(var key in arr2){
+			document.write("<li>key : "+key+ "value : "+arr2[key]+"</li>");
+		}
+	
+</script>
+</ul>
+</body>
+</html>

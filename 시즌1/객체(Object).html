@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+	<script type="text/javascript">
+	// array는 인덱스가 자동으로 만들어져서 추가된 데이터에 대한 식별자가 된다.
+	// object는 인덱스를 문자를 사용하고 싶을때 사용함
+	// 다른 언어에서는 연관배열(associative array) 또는 맵(map) 또는 딕셔너리(Dictionary)
+	//var grades = {'egoing': 10, 'k8805':6, 'sorialgi':80};
+	var grades = {}; 			// {}; === new Object();
+								// var grades = {}; 
+								// var grades = new Object();
+	grades['egoing'] = 10;		// 'egoing'이라는 key 10이라는 value
+	grades['k8805'] = 6;		// 'k8805'라는 key 6이라는 value
+	grades['sorialgi'] = 80;	// 'sorialgi'라는 key 80이라는 value
+	alert(grades['egoing']);	// 대괄호 안에 들어가는 key는 문
+	alert(grades['ego'+'ing']);	
+	alert(grades.egoing);		// .뒤에는 문자가 아니므로 위와 같이 이용 불가
+
+	</script>
+	</body>
+	</html>	
